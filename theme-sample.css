@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url("robot.css");
+
+/* General settings */
+.swagger-ui html {
+    box-sizing: border-box;
+}
+
+.swagger-ui *, .swagger-ui :after, .swagger-ui :before {
+    box-sizing: inherit;
+}
+
+.swagger-ui body {
+    margin: 0;
+    background: #FAF1F3; /* Light pink background to keep the interface bright and inviting */
+}
+
+/* Main wrapper adjustments for central alignment */
+.swagger-ui .wrapper {
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top bar styling with dark theme for contrast */
+.swagger-ui .topbar {
+    background-color: #333333; /* Dark grey for a sleek, professional look */
+    padding: 12px 20px;
+}
+
+.swagger-ui .topbar a {
+    color: #40E0D0; /* Turquoise to stand out against the dark background */
+    text-decoration: none;
+}
+
+/* Styling for operation block tags */
+.swagger-ui .opblock-tag, .swagger-ui .opblock-tag.no-desc {
+    font-size: 20px;
+    margin: 0 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    border-bottom: 2px solid #E1F5FE; /* Very light turquoise for a subtle separation */
+    background-color: #EEEEEE; /* Light grey to ensure tags are neutral and visible */
+    color: #333333; /* Dark text for visibility */
+}
+
+.swagger-ui .opblock-tag:hover, .swagger-ui .opblock-tag.no-desc:hover {
+    background-color: #E0E0E0; /* Slightly darker grey on hover */
+}
+
+/* Individual operation block styling with light colors for readability */
+.swagger-ui .opblock {
+    background-color: #F5F5F5; /* Light grey for all operation blocks, enhancing text visibility */
+    color: #333333; /* Dark text for optimal contrast */
+}
+
+.swagger-ui .opblock.opblock-post {
+    background-color: #FFFACD; /* Lemon Chiffon (light yellow) for POST requests */
+}
+
+.swagger-ui .opblock.opblock-get {
+    background-color: #FFDAB9; /* Peach Puff (light orange) for GET requests, visually distinguishable */
+}
+
+.swagger-ui .opblock.opblock-put {
+    background-color: #FFF0F5; /* Lavender Blush (light pink) for PUT requests */
+}
+
+.swagger-ui .opblock.opblock-delete {
+    background-color: #FFB6C1; /* Light Pink for DELETE requests, making it slightly vibrant */
+}
+
+.swagger-ui .opblock.opblock-patch,
+.swagger-ui .opblock.opblock-options {
+    background-color: #FAFAD2; /* Light Goldenrod Yellow for PATCH and OPTIONS requests */
+}
+
+.swagger-ui .opblock .opblock-summary-method {
+    color: #333333; /* Dark color for readability on light backgrounds */
+}
+
+/* Button styles adapted for a softer theme */
+.swagger-ui .btn {
+    background: #FF1493; /* Deep pink for vibrant button backgrounds */
+    color: #FFFFFF; /* White text for contrast */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.swagger-ui .btn:hover {
+    background: #FF69B4; /* Lighter pink on hover */
+}
